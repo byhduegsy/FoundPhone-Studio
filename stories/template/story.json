@@ -284,16 +284,6 @@
         "meta": {}
       }
     ],
-    "weibo": [
-      {
-        "id": "test-item-weibo",
-        "title": "测试内容 / 테스트 콘텐츠",
-        "body": "这是一条测试内容。 / 테스트 콘텐츠입니다.",
-        "sender": "测试用户 / 테스트 사용자",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
     "redbook": [
       {
         "id": "test-item-redbook",
