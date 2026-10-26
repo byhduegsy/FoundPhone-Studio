@@ -4948,3 +4948,218 @@ label {
   stroke: #fff;
   vertical-align: -3px;
 }
+
+
+/* Instagram direct messages and Korean/Chinese inline translations. */
+.ig-dm-inbox {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  background: #fff;
+}
+.ig-dm-inbox h2 {
+  padding: 15px 16px 8px;
+  font-size: 21px;
+}
+.ig-dm-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 11px;
+  padding: 14px 15px;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+}
+.ig-dm-row > span:nth-child(2) {
+  min-width: 0;
+  flex: 1;
+}
+.ig-dm-row strong { font-size: 12px; }
+.ig-dm-row p {
+  margin-top: 5px;
+  color: #888;
+  font-size: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ig-dm-row > small { color: #999; font-size: 9px; }
+.ig-dm-avatar {
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #f6c06c, #db5d83 55%, #7658c8);
+  color: #fff;
+  font-size: 17px;
+}
+.ig-dm-thread {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+.ig-dm-profile {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  align-items: center;
+  column-gap: 9px;
+  padding: 8px 13px;
+  border-bottom: 1px solid #eee;
+}
+.ig-dm-profile .ig-dm-avatar {
+  width: 32px;
+  height: 32px;
+  grid-row: span 2;
+  font-size: 14px;
+}
+.ig-dm-profile strong { font-size: 12px; }
+.ig-dm-profile small { font-size: 9px; color: #888; }
+.ig-dm-messages {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 13px 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.ig-dm-date {
+  text-align: center;
+  color: #999;
+  font-size: 9px;
+  margin: 4px 0 8px;
+}
+.ig-dm-message {
+  max-width: 82%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+.ig-dm-message.outgoing {
+  align-self: flex-end;
+  align-items: flex-end;
+}
+.ig-dm-bubble {
+  padding: 9px 12px;
+  border: 1px solid #e5e5e5;
+  border-radius: 18px;
+  font-size: 11px;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.ig-dm-message.outgoing .ig-dm-bubble {
+  background: #e9e5ff;
+  border-color: #e9e5ff;
+}
+.ig-dm-translation {
+  display: block;
+  margin-top: 1px;
+  opacity: .8;
+}
+.ig-dm-reaction {
+  margin-top: -5px;
+  margin-left: 9px;
+  padding: 3px 6px;
+  border: 1px solid #eee;
+  border-radius: 13px;
+  background: #fff;
+  font-size: 14px;
+  box-shadow: 0 1px 3px #00000012;
+}
+.ig-dm-compose {
+  flex-shrink: 0;
+  margin: 8px 10px 10px;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #888;
+  font-size: 10px;
+}
+.ig-dm-compose svg { color: #d76c8a; }
+.ig-post-comment {
+  padding: 0 13px 7px;
+  font-size: 10px;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+.ig-post-comment strong { margin-right: 4px; }
+
+/* KakaoTalk shared location card: a stylized in-chat map preview. */
+.kakao-map-preview {
+  width: 190px;
+  overflow: hidden;
+  border-radius: 9px;
+  background: #fff;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  white-space: normal;
+}
+.kakao-map-art {
+  height: 104px;
+  position: relative;
+  overflow: hidden;
+  background: #e9eee2;
+  background-image: linear-gradient(28deg, transparent 45%, #fff 46%, #fff 51%, transparent 52%), linear-gradient(115deg, transparent 35%, #fff 36%, #fff 42%, transparent 43%), linear-gradient(75deg, transparent 60%, #c5dded 61%, #c5dded 68%, transparent 69%);
+}
+.kakao-map-art .map-road {
+  position: absolute;
+  display: block;
+  height: 7px;
+  width: 130%;
+  background: #fff;
+  border: 1px solid #d9ded5;
+  border-width: 1px 0;
+}
+.kakao-map-art .map-road-one { top: 29px; left: -15px; transform: rotate(-17deg); }
+.kakao-map-art .map-road-two { top: 67px; left: -10px; transform: rotate(20deg); }
+.kakao-map-art .map-road-three { top: 43px; left: 48px; transform: rotate(72deg); }
+.kakao-map-art .map-pin {
+  position: absolute;
+  top: 29px;
+  left: 91px;
+  z-index: 1;
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  background: #e65e50;
+  color: #fff;
+  font-size: 12px;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 3px #0003;
+}
+.kakao-map-art small {
+  position: absolute;
+  bottom: 5px;
+  left: 6px;
+  color: #485449;
+  font-size: 8px;
+  background: #ffffffd9;
+  padding: 3px 5px;
+  border-radius: 4px;
+}
+.kakao-map-preview > strong,
+.kakao-map-preview > span,
+.kakao-map-preview > small {
+  margin: 0 9px;
+}
+.kakao-map-preview > strong { font-size: 11px; }
+.kakao-map-preview > span { font-size: 9px; color: #777; }
+.kakao-map-preview > small {
+  font-size: 8px;
+  line-height: 1.5;
+  color: #777;
+  margin-bottom: 9px;
+}
