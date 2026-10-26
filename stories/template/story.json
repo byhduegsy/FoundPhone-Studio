@@ -3,9 +3,9 @@
   "id": "birthday-phone-story",
   "title": "捡到的手机 / 주운 휴대폰",
   "description": "一部记录生日、聊天与社交账号的手机。 / 생일, 대화, 소셜 계정이 담긴 휴대폰.",
-  "revision": 3,
+  "revision": 4,
   "phone": {
-    "owner": "리노 / 李旻浩",
+    "owner": "t.leeknowsaurus",
     "date": "2026-10-25",
     "time": "15:40",
     "battery": 94,
