@@ -912,7 +912,7 @@ function AppContent({
   const chats = [...new Set(shown.map((i) => i.title))];
   const back = () => {
     if (detail) setDetail(null);
-    else if (thread) setThread("");
+    else if (thread) setThread(thread === "minikim" ? "instagram-dm" : "");
     else onBack();
   };
   const Skin =
@@ -1039,7 +1039,7 @@ function AppContent({
           <ChevronLeft size={23} />
           {detail || thread ? "返回" : ""}
         </button>
-        <strong>{thread || name}</strong>
+        <strong>{thread === "instagram-dm" ? "消息 / 메시지" : thread || name}</strong>
         <button
           onClick={
             creator
@@ -1227,7 +1227,7 @@ function AppContent({
               </div>
             </>
           ) : app.engine === "social" ? (
-            filtered.map((i) => (
+            filtered.filter((i) => i.meta?.type !== "dm").map((i) => (
               <article className="social-post" key={i.id}>
                 <div className="post-author">
                   <span className="avatar" style={{ background: app.color }}>
