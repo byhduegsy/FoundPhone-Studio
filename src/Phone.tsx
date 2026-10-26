@@ -1045,7 +1045,7 @@ function AppContent({
             creator
               ? onAdd
               : app.id === "instagram"
-                ? () => setThread(thread ? "" : "instagram-dm")
+                ? () => setThread(thread === "instagram-dm" ? "" : "instagram-dm")
                 : () =>
                     document
                       .querySelector<HTMLInputElement>(
@@ -1055,7 +1055,7 @@ function AppContent({
           }
           aria-label={creator ? "新增内容" : app.id === "instagram" ? "打开私信" : "搜索内容"}
         >
-          {creator ? <Plus size={22} /> : <Search size={20} />}
+          {creator ? <Plus size={22} /> : app.id === "instagram" ? <MessageCircle size={20} /> : <Search size={20} />}
         </button>
       </div>
       {app.id === "settings" && !detail ? (
