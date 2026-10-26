@@ -49,6 +49,7 @@ import {
   Heart,
   MessageCircle,
   MoreHorizontal,
+  BadgeCheck,
   ArrowUp,
   Folder,
   Phone as PhoneIcon,
@@ -1186,6 +1187,9 @@ function AppContent({
                   </span>
                   <div>
                     <strong>{i.sender}</strong>
+                    {i.meta?.verified === "true" && (
+                      <BadgeCheck className="verified-badge" size={15} aria-label="已认证账号" />
+                    )}
                     <small>{i.time}</small>
                   </div>
                   <button aria-label="查看帖子详情" onClick={() => read(i)}>
