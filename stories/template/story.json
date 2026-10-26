@@ -3,7 +3,7 @@
   "id": "birthday-phone-story",
   "title": "捡到的手机 / 주운 휴대폰",
   "description": "一部记录生日、聊天与社交账号的手机。 / 생일, 대화, 소셜 계정이 담긴 휴대폰.",
-  "revision": 6,
+  "revision": 7,
   "phone": {
     "owner": "순동다의 오빠",
     "date": "2026-10-25",
@@ -70,17 +70,67 @@
       ],
       "messages": [
         {
-          "id": "kakao-dog-1533",
-          "body": "형, 오늘 저녁 시간 있어요? 오늘 생일이라 배 터지게 먹기로 했잖아요. 뭐 먹고 싶어요? 제가 카드 들고 갈게요.\n哥，晚上有空吗？不是说今天生日要大吃一顿吗？想吃什么？我带卡来。",
+          "id": "kakao-dog-1533-1",
+          "body": "형\n哥",
           "senderId": "dog-contact",
           "time": "2026-10-25 15:33",
           "kind": "text"
         },
         {
-          "id": "kakao-owner-1540",
-          "body": "전에 저장해 둔 동네 고깃집이 있어요. 주소 보내 줄게요. 언제 갈까요?\n我之前收藏了一家小区烤肉店，地址发你，什么时候去？",
+          "id": "kakao-dog-1533-2",
+          "body": "오늘 저녁 시간 있어요?\n晚上有空吗？",
+          "senderId": "dog-contact",
+          "time": "2026-10-25 15:33",
+          "kind": "text"
+        },
+        {
+          "id": "kakao-dog-1533-3",
+          "body": "오늘 생일이라 배 터지게 먹기로 했잖아요. 뭐 먹고 싶어요?\n看你说今天生日要大吃一顿，想吃什么？",
+          "senderId": "dog-contact",
+          "time": "2026-10-25 15:34",
+          "kind": "text"
+        },
+        {
+          "id": "kakao-dog-1533-4",
+          "body": "제가 카드 들고 갈게요.\n我带卡来",
+          "senderId": "dog-contact",
+          "time": "2026-10-25 15:34",
+          "kind": "text"
+        },
+        {
+          "id": "kakao-owner-1540-1",
+          "body": "전에 저장해 둔 동네 고깃집이 있어요.\n我之前收藏了一家小区烤肉店",
           "senderId": "owner",
           "time": "2026-10-25 15:40",
+          "kind": "text"
+        },
+        {
+          "id": "kakao-owner-1540-2",
+          "body": "주소 보내 줄게요.\n地址发你",
+          "senderId": "owner",
+          "time": "2026-10-25 15:40",
+          "kind": "text"
+        },
+        {
+          "id": "kakao-owner-map-1540",
+          "body": "서울 성동구 성수이로 18길 12\n首尔城东区圣水二路18街12号",
+          "senderId": "owner",
+          "time": "2026-10-25 15:40",
+          "kind": "event",
+          "title": "성수골목숯불갈비 / 圣水巷炭火烤肉",
+          "meta": {
+            "type": "map",
+            "place": "성수골목숯불갈비",
+            "address": "서울 성동구 성수이로 18길 12",
+            "addressZh": "首尔城东区圣水二路18街12号",
+            "category": "동네 숯불갈비집 / 社区炭火烤肉店"
+          }
+        },
+        {
+          "id": "kakao-owner-1540-3",
+          "body": "언제 나올 수 있어요?\n你什么时候能出来？",
+          "senderId": "owner",
+          "time": "2026-10-25 15:41",
           "kind": "text"
         }
       ]
@@ -281,13 +331,74 @@
       {
         "id": "ig-main-post-1",
         "title": "主号动态 / 메인 계정 게시물",
-        "body": "생일 주간. 오늘 저녁은 고기.\n中文：生日周。今晚吃烤肉。",
+        "body": "생일 주간. 오늘 저녁은 고기.\n生日周。今晚吃烤肉。",
         "sender": "노😼",
         "time": "2026-10-25 14:50",
         "kind": "post",
         "meta": {
           "account": "main",
           "verified": "true",
+          "bilingual": "true"
+        },
+        "comments": [
+          "minikim|이 집 맛있다, 다음에 또 오자!\n喜欢吃这家，下次还来"
+        ],
+        "likes": 38
+      },
+      {
+        "id": "ig-dm-minikim-1",
+        "title": "minikim",
+        "body": "순이 스토리 답장 / 순儿真可爱😍\n顺儿真可爱😍",
+        "sender": "minikim",
+        "time": "2026-10-25 15:42",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "type": "dm",
+          "thread": "minikim",
+          "bilingual": "true"
+        }
+      },
+      {
+        "id": "ig-dm-minikim-2",
+        "title": "minikim",
+        "body": "당연하지, 우리 어르신 지금도 정정하시거든.\n那当然，老人家现在精气神很好。",
+        "sender": "노😼",
+        "time": "2026-10-25 15:43",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "type": "dm",
+          "thread": "minikim",
+          "bilingual": "true"
+        }
+      },
+      {
+        "id": "ig-dm-minikim-3",
+        "title": "minikim",
+        "body": "형도 귀여워😽\n哥也可爱😽",
+        "sender": "minikim",
+        "time": "2026-10-25 15:43",
+        "kind": "text",
+        "outgoing": false,
+        "meta": {
+          "type": "dm",
+          "thread": "minikim",
+          "bilingual": "true"
+        }
+      },
+      {
+        "id": "ig-dm-minikim-4",
+        "title": "minikim",
+        "body": "야, 무슨 소리야.\n呀，你说什么呢。",
+        "sender": "노😼",
+        "time": "2026-10-25 15:44",
+        "kind": "text",
+        "outgoing": true,
+        "meta": {
+          "type": "dm",
+          "thread": "minikim",
+          "reaction": "🥰",
           "bilingual": "true"
         }
       }
