@@ -284,86 +284,6 @@
         "meta": {}
       }
     ],
-    "redbook": [
-      {
-        "id": "test-item-redbook",
-        "title": "测试内容 / 테스트 콘텐츠",
-        "body": "这是一条测试内容。 / 테스트 콘텐츠입니다.",
-        "sender": "测试用户 / 테스트 사용자",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "douyin": [
-      {
-        "id": "test-item-douyin",
-        "title": "测试内容 / 테스트 콘텐츠",
-        "body": "这是一条测试内容。 / 테스트 콘텐츠입니다.",
-        "sender": "测试用户 / 테스트 사용자",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "bilibili": [
-      {
-        "id": "test-item-bilibili",
-        "title": "测试内容 / 테스트 콘텐츠",
-        "body": "这是一条测试内容。 / 테스트 콘텐츠입니다.",
-        "sender": "测试用户 / 테스트 사용자",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "alipay": [
-      {
-        "id": "test-item-alipay",
-        "title": "测试内容 / 테스트 콘텐츠",
-        "body": "这是一条测试内容。 / 테스트 콘텐츠입니다.",
-        "sender": "测试用户 / 테스트 사용자",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "taobao": [
-      {
-        "id": "test-item-taobao",
-        "title": "测试内容 / 테스트 콘텐츠",
-        "body": "这是一条测试内容。 / 테스트 콘텐츠입니다.",
-        "sender": "测试用户 / 테스트 사용자",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "netease": [
-      {
-        "id": "test-item-netease",
-        "title": "测试内容 / 테스트 콘텐츠",
-        "body": "这是一条测试内容。 / 테스트 콘텐츠입니다.",
-        "sender": "测试用户 / 테스트 사용자",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "delivery": [
-      {
-        "id": "test-item-delivery",
-        "title": "测试内容 / 테스트 콘텐츠",
-        "body": "这是一条测试内容。 / 테스트 콘텐츠입니다.",
-        "sender": "测试用户 / 테스트 사용자",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "forum": [
-      {
-        "id": "test-item-forum",
-        "title": "测试内容 / 테스트 콘텐츠",
-        "body": "这是一条测试内容。 / 테스트 콘텐츠입니다.",
-        "sender": "测试用户 / 테스트 사용자",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
     "instagram": [
       {
         "id": "ig-main-post-1",
@@ -392,16 +312,6 @@
         }
       }
     ],
-    "tiktok": [
-      {
-        "id": "test-item-tiktok",
-        "title": "测试内容 / 테스트 콘텐츠",
-        "body": "这是一条测试内容。 / 테스트 콘텐츠입니다.",
-        "sender": "测试用户 / 테스트 사용자",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
     "twitter": [
       {
         "id": "test-item-twitter",
@@ -415,36 +325,6 @@
     "youtube": [
       {
         "id": "test-item-youtube",
-        "title": "测试内容 / 테스트 콘텐츠",
-        "body": "这是一条测试内容。 / 테스트 콘텐츠입니다.",
-        "sender": "测试用户 / 테스트 사용자",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "snapchat": [
-      {
-        "id": "test-item-snapchat",
-        "title": "测试内容 / 테스트 콘텐츠",
-        "body": "这是一条测试内容。 / 테스트 콘텐츠입니다.",
-        "sender": "测试用户 / 테스트 사용자",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "facebook": [
-      {
-        "id": "test-item-facebook",
-        "title": "测试内容 / 테스트 콘텐츠",
-        "body": "这是一条测试内容。 / 테스트 콘텐츠입니다.",
-        "sender": "测试用户 / 테스트 사용자",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "reddit": [
-      {
-        "id": "test-item-reddit",
         "title": "测试内容 / 테스트 콘텐츠",
         "body": "这是一条测试内容。 / 테스트 콘텐츠입니다.",
         "sender": "测试用户 / 테스트 사용자",
@@ -470,74 +350,6 @@
         "sender": "测试用户 / 테스트 사용자",
         "kind": "text",
         "meta": {}
-      }
-    ],
-    "pinterest": [
-      {
-        "id": "test-item-pinterest",
-        "title": "测试内容 / 테스트 콘텐츠",
-        "body": "这是一条测试内容。 / 테스트 콘텐츠입니다.",
-        "sender": "测试用户 / 테스트 사용자",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "threads": [
-      {
-        "id": "test-item-threads",
-        "title": "测试内容 / 테스트 콘텐츠",
-        "body": "这是一条测试内容。 / 테스트 콘텐츠입니다.",
-        "sender": "测试用户 / 테스트 사용자",
-        "kind": "text",
-        "meta": {}
-      },
-      {
-        "id": "test-threads-message-1",
-        "title": "测试会话1",
-        "body": "这是一条测试消息。 / 테스트 메시지입니다.",
-        "sender": "测试联系人1",
-        "folder": "私信"
-      },
-      {
-        "id": "test-threads-activity-1",
-        "title": "测试动态1",
-        "body": "这是一条测试回复动态。",
-        "sender": "测试用户1",
-        "meta": {
-          "activityType": "reply"
-        }
-      },
-      {
-        "id": "test-threads-message-2",
-        "title": "测试会话2",
-        "body": "这是一条测试消息。 / 테스트 메시지입니다.",
-        "sender": "测试联系人2",
-        "folder": "私信"
-      },
-      {
-        "id": "test-threads-activity-2",
-        "title": "测试动态2",
-        "body": "这是一条测试回复动态。",
-        "sender": "测试用户2",
-        "meta": {
-          "activityType": "reply"
-        }
-      },
-      {
-        "id": "test-threads-message-3",
-        "title": "测试会话3",
-        "body": "这是一条测试消息。 / 테스트 메시지입니다.",
-        "sender": "测试联系人3",
-        "folder": "私信"
-      },
-      {
-        "id": "test-threads-activity-3",
-        "title": "测试动态3",
-        "body": "这是一条测试回复动态。",
-        "sender": "测试用户3",
-        "meta": {
-          "activityType": "reply"
-        }
       }
     ],
     "appstore": [
