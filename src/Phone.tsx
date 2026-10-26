@@ -1094,6 +1094,12 @@ function AppContent({
                       ¥ {i.body}
                       <small>虚构转账记录</small>
                     </span>
+                  ) : app.id === "kakao" && i.body.includes("\n") ? (
+                    <span className="bilingual-bubble">
+                      <span className="bubble-korean">{i.body.split("\n")[0]}</span>
+                      <span className="bubble-divider" aria-hidden="true" />
+                      <span className="bubble-chinese">{i.body.split("\n").slice(1).join("\n")}</span>
+                    </span>
                   ) : (
                     i.body
                   )}
