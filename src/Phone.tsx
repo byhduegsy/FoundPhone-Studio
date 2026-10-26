@@ -1044,14 +1044,16 @@ function AppContent({
           onClick={
             creator
               ? onAdd
-              : () =>
-                  document
-                    .querySelector<HTMLInputElement>(
-                      ".app-screen .phone-search input",
-                    )
-                    ?.focus()
+              : app.id === "instagram"
+                ? () => setThread(thread ? "" : "instagram-dm")
+                : () =>
+                    document
+                      .querySelector<HTMLInputElement>(
+                        ".app-screen .phone-search input",
+                      )
+                      ?.focus()
           }
-          aria-label={creator ? "新增内容" : "搜索内容"}
+          aria-label={creator ? "新增内容" : app.id === "instagram" ? "打开私信" : "搜索内容"}
         >
           {creator ? <Plus size={22} /> : <Search size={20} />}
         </button>
@@ -1073,6 +1075,39 @@ function AppContent({
         />
       ) : detail ? (
         detailView
+      ) : app.id === "instagram" && thread === "instagram-dm" ? (
+        <div className="ig-dm-inbox">
+          <h2>消息 / 메시지</h2>
+          <button className="ig-dm-row" onClick={() => setThread("minikim")}>
+            <span className="avatar ig-dm-avatar">m</span>
+            <span>
+              <strong>minikim</strong>
+              <p>야, 무슨 소리야. · 呀，你说什么呢。 🥰</p>
+            </span>
+            <small>15:44</small>
+          </button>
+        </div>
+      ) : app.id === "instagram" && thread === "minikim" ? (
+        <div className="ig-dm-thread">
+          <div className="ig-dm-profile">
+            <span className="avatar ig-dm-avatar">m</span>
+            <strong>minikim</strong>
+            <small>Instagram · 私信 / 다이렉트 메시지</small>
+          </div>
+          <div className="ig-dm-messages">
+            <div className="ig-dm-date">今天 15:42 · 오늘 15:42</div>
+            {shown.filter((i) => i.meta?.thread === "minikim").map((i) => (
+              <div key={i.id} className={`ig-dm-message ${i.outgoing ? "outgoing" : "incoming"}`}>
+                <div className="ig-dm-bubble">
+                  <span>{i.body.split("\n")[0]}</span>
+                  {i.body.includes("\n") && <span className="ig-dm-translation">{i.body.split("\n").slice(1).join(" ")}</span>}
+                </div>
+                {i.meta?.reaction && <span className="ig-dm-reaction" aria-label="心情回应 / 반응">{i.meta.reaction}</span>}
+              </div>
+            ))}
+          </div>
+          <div className="ig-dm-compose"><span>发送消息… / 메시지 보내기…</span><Heart size={18} /></div>
+        </div>
       ) : app.engine === "messaging" && thread ? (
         <div className="chat-content">
           <div className="chat-time">2026 年 9 月 1 日</div>
@@ -1086,7 +1121,20 @@ function AppContent({
               >
                 <span className="avatar">{i.sender.slice(0, 1)}</span>
                 <span className="bubble">
-                  {i.kind === "image" ||
+                  {i.kind === "event" && i.meta?.type === "map" ? (
+                    <div className="kakao-map-preview">
+                      <div className="kakao-map-art">
+                        <span className="map-road map-road-one" />
+                        <span className="map-road map-road-two" />
+                        <span className="map-road map-road-three" />
+                        <span className="map-pin">●</span>
+                        <small>성수동 · 성동구 / 圣水洞 · 城东区</small>
+                      </div>
+                      <strong>{i.title}</strong>
+                      <span>{i.meta.category}</span>
+                      <small>{i.meta.address}<br />{i.meta.addressZh}</small>
+                    </div>
+                  ) : i.kind === "image" ||
                   i.kind === "audio" ||
                   i.kind === "video" ? (
                     <Media item={i} />
@@ -1127,7 +1175,7 @@ function AppContent({
         <div
           className={`phone-content ${app.engine === "social" ? "feed-content" : ""}`}
         >
-          {app.engine !== "media" && (
+          {app.engine !== "media" && !thread && (
             <div className="phone-search">
               <Search size={15} />
               <input
@@ -1226,6 +1274,10 @@ function AppContent({
                   <strong>{i.title}</strong>
                   <p>{i.body}</p>
                 </button>
+                {i.comments?.map((comment, index) => {
+                  const [author, text] = comment.split("|");
+                  return <p className="ig-post-comment" key={index}><strong>{author}</strong> {text}</p>;
+                })}
               </article>
             ))
           ) : (
