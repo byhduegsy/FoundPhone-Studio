@@ -4937,3 +4937,14 @@ label {
 .skin-kakao .bubble-chinese {
   opacity: 0.86;
 }
+
+
+/* Verified badge for the Instagram main account. */
+.verified-badge {
+  display: inline-block;
+  margin-left: 4px;
+  color: #3897f0;
+  fill: #3897f0;
+  stroke: #fff;
+  vertical-align: -3px;
+}
