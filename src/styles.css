@@ -4918,3 +4918,22 @@ label {
   background: #e34f58;
   transform: rotate(135deg);
 }
+
+
+/* KakaoTalk: Korean and Chinese stay in one bubble, separated by a dashed rule. */
+.skin-kakao .bilingual-bubble {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  white-space: pre-wrap;
+  line-height: 1.55;
+}
+.skin-kakao .bubble-divider {
+  display: block;
+  width: 100%;
+  border-top: 1px dashed currentColor;
+  opacity: 0.35;
+}
+.skin-kakao .bubble-chinese {
+  opacity: 0.86;
+}
