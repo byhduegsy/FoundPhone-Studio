@@ -3,11 +3,11 @@
   "id": "birthday-phone-story",
   "title": "捡到的手机 / 주운 휴대폰",
   "description": "一部记录生日、聊天与社交账号的手机。 / 생일, 대화, 소셜 계정이 담긴 휴대폰.",
-  "revision": 8,
+  "revision": 9,
   "phone": {
     "owner": "순동다의 오빠",
-    "date": "2026-10-24",
-    "time": "12:27",
+    "date": "2026-10-25",
+    "time": "21:00",
     "battery": 94,
     "network": "5G",
     "wallpaper": "night",
@@ -119,49 +119,49 @@
           "id": "kakao-dog-1533-1",
           "body": "형\n哥",
           "senderId": "dog-contact",
-          "time": "2026-10-24 12:31",
+          "time": "2026-10-25 15:33",
           "kind": "text"
         },
         {
           "id": "kakao-dog-1533-2",
           "body": "오늘 저녁 시간 있어요?\n晚上有空吗？",
           "senderId": "dog-contact",
-          "time": "2026-10-24 12:32",
+          "time": "2026-10-25 15:33",
           "kind": "text"
         },
         {
           "id": "kakao-dog-1533-3",
           "body": "오늘 생일이라 배 터지게 먹기로 했잖아요. 뭐 먹고 싶어요?\n看你说今天生日要大吃一顿，想吃什么？",
           "senderId": "dog-contact",
-          "time": "2026-10-24 12:33",
+          "time": "2026-10-25 15:34",
           "kind": "text"
         },
         {
           "id": "kakao-dog-1533-4",
           "body": "제가 카드 들고 갈게요.\n我带卡来",
           "senderId": "dog-contact",
-          "time": "2026-10-24 12:34",
+          "time": "2026-10-25 15:34",
           "kind": "text"
         },
         {
           "id": "kakao-owner-1540-1",
           "body": "전에 저장해 둔 동네 고깃집이 있어요.\n我之前收藏了一家小区烤肉店",
           "senderId": "owner",
-          "time": "2026-10-24 12:36",
+          "time": "2026-10-25 15:40",
           "kind": "text"
         },
         {
           "id": "kakao-owner-1540-2",
           "body": "주소 보내 줄게요.\n地址发你",
           "senderId": "owner",
-          "time": "2026-10-24 12:37",
+          "time": "2026-10-25 15:40",
           "kind": "text"
         },
         {
           "id": "kakao-owner-map-1540",
           "body": "서울 성동구 성수이로 18길 12\n首尔城东区圣水二路18街12号",
           "senderId": "owner",
-          "time": "2026-10-24 12:28",
+          "time": "2026-10-25 15:40",
           "kind": "event",
           "title": "성수골목숯불갈비 / 圣水巷炭火烤肉",
           "meta": {
@@ -176,7 +176,7 @@
           "id": "kakao-owner-1540-3",
           "body": "언제 나올 수 있어요?\n你什么时候能出来？",
           "senderId": "owner",
-          "time": "2026-10-24 12:38",
+          "time": "2026-10-25 15:41",
           "kind": "text"
         }
       ]
