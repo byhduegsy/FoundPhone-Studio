@@ -57,13 +57,6 @@
       "phone": "",
       "avatar": "",
       "bio": "生日饭搭子 / 생일 저녁을 함께 먹을 사람"
-    },
-    {
-      "id": "kkkkkmh",
-      "name": "kkkkkmh",
-      "phone": "",
-      "avatar": "",
-      "bio": "Instagram 私信联系人 / 인스타그램 DM 연락처"
     }
   ],
   "chats": [
@@ -295,19 +288,6 @@
         "meta": {
           "account": "main",
           "verified": "true",
-          "bilingual": "true"
-        }
-      },
-      {
-        "id": "ig-alt-dm-kkkkkmh",
-        "title": "kkkkkmh",
-        "body": "안녕, 메시지 확인했어?\n中文翻译：嗨，你看到消息了吗？",
-        "sender": "kkkkkmh",
-        "time": "2026-10-25 15:20",
-        "folder": "私信",
-        "kind": "text",
-        "meta": {
-          "account": "노😼",
           "bilingual": "true"
         }
       }
