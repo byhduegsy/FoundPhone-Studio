@@ -1110,7 +1110,7 @@ function AppContent({
         </div>
       ) : app.engine === "messaging" && thread ? (
         <div className="chat-content">
-          <div className="chat-time">2026 年 9 月 1 日</div>
+          <div className="chat-time">10月24日 星期五 · 10월 24일 금요일</div>
           {shown
             .filter((i) => i.title === thread)
             .map((i) => (
